@@ -1,0 +1,10 @@
+{
+  "logo.alt": {
+    "message": "Kubefirst Pro Docs",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Website": {
+    "message": "Website",
+    "description": "Navbar item with label Website"
+  }
+}

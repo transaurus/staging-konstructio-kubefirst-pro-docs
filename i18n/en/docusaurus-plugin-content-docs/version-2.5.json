@@ -1,0 +1,102 @@
+{
+  "version.label": {
+    "message": "2.5",
+    "description": "The label for version 2.5"
+  },
+  "sidebar.akamai.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar akamai"
+  },
+  "sidebar.akamai.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar akamai"
+  },
+  "sidebar.akamai.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar akamai"
+  },
+  "sidebar.aws.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar aws"
+  },
+  "sidebar.aws.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar aws"
+  },
+  "sidebar.aws.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar aws"
+  },
+  "sidebar.aws.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar aws"
+  },
+  "sidebar.do.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar do"
+  },
+  "sidebar.do.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar do"
+  },
+  "sidebar.do.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar do"
+  },
+  "sidebar.civo.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar civo"
+  },
+  "sidebar.civo.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar civo"
+  },
+  "sidebar.civo.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar civo"
+  },
+  "sidebar.gcp.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar gcp"
+  },
+  "sidebar.gcp.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar gcp"
+  },
+  "sidebar.gcp.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar gcp"
+  },
+  "sidebar.k3d.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar k3d"
+  },
+  "sidebar.k3d.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar k3d"
+  },
+  "sidebar.k3s.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar k3s"
+  },
+  "sidebar.k3s.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar k3s"
+  },
+  "sidebar.k3s.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar k3s"
+  },
+  "sidebar.vultr.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar vultr"
+  },
+  "sidebar.vultr.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar vultr"
+  },
+  "sidebar.vultr.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar vultr"
+  }
+}

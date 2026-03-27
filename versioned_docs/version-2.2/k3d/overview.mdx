@@ -1,0 +1,59 @@
+---
+hide_title: true
+sidebar_label: Overview
+sidebar_position: 1
+description: an overview of the kubefirst platform
+image: "https://kubefirst.konstruct.io/docs/img/logo.svg"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import styles from "../stylesheets/tabs.module.css";
+import * as config from "../constants.js";
+
+<div
+  style={{
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
+  }}
+>
+  <div>
+    <img src={config.K3D_LOGO_URL} height="50" width="120" alt="k3d logo" />
+  </div>
+</div>
+
+import GitHubOverview from '../k3d/partials/github/_overview.mdx';
+import GitLabOverview from '../k3d/partials/gitlab/_overview.mdx';
+
+# Overview
+
+The k3d provisioning process will:
+
+- Create a multinode k3d Kubernetes cluster on your localhost.
+- Create a `gitops` git repository from our [gitops-template](https://github.com/kubefirst/gitops-template), customized for you, and store it in your git provider.
+- Install Argo CD and register it with your `gitops` repository so that your main branch powers the platform.
+- Install all the platform apps using Argo CD GitOps preconfigured sync waves (`gitops` repository `/registry` folder).
+- Apply Terraform to configure Vault (`gitops` repository `/terraform/vault` folder).
+- Bind a webhook to Atlantis to automate Terraform executions.
+- Integrate Argo Workflows with your git provider.
+- Install Argo Workflows automation to build containers, publish charts, and provide GitOps delivery pipelines.
+- Install a sample app git repository that uses this automation to demonstrate GitOps app delivery and promotion ([metaphor](https://github.com/kubefirst/gitops-template/tree/main/metaphor) source code).
+
+<Tabs groupId="git_provider" defaultValue="github" queryString>
+  <TabItem attributes={{ className: styles.github }} value="github" label={ <div className="git-tab"><img src="https://assets.kubefirst.com/console/github.svg" alt="GitHub logo" /><span>GitHub</span></div> }>
+
+    ![Installation Diagram](../img/local/github/installation-diagram-light.svg#light-mode)![Installation Diagram](../img/local/github/installation-diagram-dark.svg#dark-mode)
+
+    ## Applications
+    <GitHubOverview />
+
+  </TabItem>
+  <TabItem value="gitlab" attributes={{ className: styles.gitlab }} label={ <div className="git-tab"> <img src="https://assets.kubefirst.com/console/gitlab.svg" alt="GitLab logo" /> <span>GitLab</span></div> }>
+
+    ![Installation Diagram](../img/local/gitlab/installation-diagram-light.svg#light-mode)![Installation Diagram](../img/local/gitlab/installation-diagram-dark.svg#dark-mode)
+
+    ## Applications
+    <GitLabOverview />
+  </TabItem>
+</Tabs>

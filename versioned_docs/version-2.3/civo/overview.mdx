@@ -1,0 +1,43 @@
+---
+sidebar_label: Overview
+sidebar_position: 1
+description: an overview of kubefirst on a civo kubernetes cluster
+image: "https://kubefirst.konstruct.io/docs/img/logo.svg"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import styles from "../stylesheets/tabs.module.css";
+import ReactDom from 'react-dom';
+import GitHubOverview from '../civo/partials/github/_overview.mdx';
+import GitLabOverview from '../civo/partials/gitlab/_overview.mdx';
+import CloudBanner from '@site/src/components/CloudBanner/CloudBanner.jsx';
+import CommonProvisionProcess from "../common/partials/common/_provision-process.mdx";
+import CivoLogo from '../img/civo/logo.svg';
+
+<div class="cloud_logo">
+  <CivoLogo width="200px" alt="Civo Logo" />
+</div>
+
+# Overview
+
+The Civo provisioning process will:
+<CommonProvisionProcess firstitem="Create a Kubernetes management cluster in the Civo cloud."/>
+
+<Tabs groupId="git_provider" defaultValue="github" queryString>
+  <TabItem attributes={{ className: styles.github }} value="github" label={ <div className="git-tab"><img src="https://assets.kubefirst.com/console/github.svg" alt="GitHub logo" /><span>GitHub</span></div> }>
+
+    ![Installation Diagram](../img/civo/github/installation-diagram-light.svg#light-mode)![Installation Diagram](../img/civo/github/installation-diagram-dark.svg#dark-mode)
+
+    ## Applications
+    <GitHubOverview />
+
+  </TabItem>
+  <TabItem value="gitlab" attributes={{ className: styles.gitlab }} label={ <div className="git-tab"> <img src="https://assets.kubefirst.com/console/gitlab.svg" alt="GitLab logo" /> <span>GitLab</span></div> }>
+
+    ![Installation Diagram](../img/civo/gitlab/installation-diagram-light.svg#light-mode)![Installation Diagram](../img/civo/gitlab/installation-diagram-dark.svg#dark-mode)
+
+    ## Applications
+    <GitLabOverview />
+  </TabItem>
+</Tabs>

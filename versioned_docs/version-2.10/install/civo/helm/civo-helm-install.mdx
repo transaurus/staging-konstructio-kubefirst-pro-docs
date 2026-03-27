@@ -1,0 +1,111 @@
+---
+title: Civo Helm Install
+description: Installation steps for Kubefirst using Civo Cloud and Helm
+keywords: [civo, kubernetes, containers, clusters, kubefirst, konstruct] 
+sidebar_position: 2
+---
+
+## Summary
+
+After reviewing and confirming you have all of the prerequisites required for this installation process this page walks through all of the steps for **Kubefirst installation with Civo and Helm**.
+
+## Installing Kubefirst
+
+### Step 1 - Install the Platform Installer Tools
+
+Run the following commands to add the Kubefirst installer tools to your existing cluster. This enables us to create your new management cluster in Civo using your preferred git provider.
+
+    ```bash
+    helm repo add konstruct https://charts.konstruct.io
+    helm repo update
+
+    helm install kubefirst --namespace kubefirst --create-namespace  konstruct/kubefirst
+
+    kubectl -n kubefirst port-forward svc/kubefirst-console 8080:8080
+    ```
+
+### Step 2 - Connect to Kubefirst installer
+
+Open a browser to launch the Kubefirst installer with the URL -  `http://localhost:8080`
+
+    ![Kubefirst Installer](../../../img/civo/kubefirstinstaller.png)
+
+### Step 3 - Create your management cluster
+
+1. From the path in the previous step select your preferred Git provider. (_We’re using GitHub for this example._)
+
+    ![Authentication](../../../img/civo/authentication.png)
+
+2. Provide the required details for your Git provider.
+
+    - Personal Access Token/GitHub username
+    - Organization name (Group for GitLab)
+    - Civo API Key
+
+3. Select **Next** for Cluster details.
+_Note: the recommendations below are the minimum requirements to run a management cluster._
+
+   - Alerts email - receives notifications for encryption certificate expiration. This email will not be used by Konstruct for anything outside of these notifications
+   - Cloud region - fra1 (recommended)
+   - Instance size - g4s.kube.large (recommended)
+   - Number of nodes - 4 (recommended)
+   - DNS provider - For Cloudflare provide the Cloudflare token, cluster domain name, subdomain name (optional), and cluster name
+  
+    ![Cluster details](../../../img/civo/clusterdetails.png)
+
+4. **Advanced Options** are all optional and allow you to:
+
+   - Override the gitops-template repository
+   - Specify a different GitOps template branch
+   - Use HTTPs instead of SSH
+   - Prevent the installation of the Kubefirst UI component
+
+5. Select **Create Cluster** once you’re satisfied with the details you’ve provided to start provisioning! _This process is typically about 15-20 minutes._
+
+6. When your cluster has successfully provisioned select **Next.**
+
+    ![Successful provisioning](../../../img/civo/provisioned.png)
+
+7. After successful provisioning the cluster details with the new Vault password are provided in the next screen.
+
+:::tip
+This part of the provisioning process creates your management cluster, bootstraps your new platform onto that cluster, and then adds Kubefirst to that platform. Kubefirst includes this management cluster for free. You can upgrade your license to manage workload clusters.
+:::
+
+### Step 4 - Launch Kubefirst
+
+From the success screen you can now launch Kubefirst
+
+    ![Cluster is ready](../../../img/civo/ready.png)
+
+1. Select **Open kubefirst console** to see your cluster details.
+   - The default username for your new platform bot administrator account is `kbot`
+   - **Save this password somewhere safe** to retain access to your management cluster.
+
+    ![New management cluster](../../../img/civo/managementcluster.png)
+
+Congratulations you have a brand new management cluster. 🎉
+
+## What's Next?
+
+After completing the installation we recommend that you deprovision the install cluster.
+
+### Remove the Kubefirst installer
+
+After you’ve completed your Kubernetes Pro installation you can run the following commands to remove the installer from your cluster.
+
+    ```bash
+    helm -n kubefirst delete kubefirst
+    kubectl -n kubefirst delete secret/kubefirst-initial-secrets
+    ```
+
+### Explore Kubefirst
+
+By default your new management cluster has been created in the Free tier of the Kubefirst Platform. This tier includes access to the Kubefirst Pro UI.
+
+Now that you have a functional install you may want to:
+
+- Explore more details on [Kubefirst Features](../../../features/)
+- Read details on how to upgrade or manage users and passwords in [Kubefirst Administration](../../../admin/)
+- Reach out to [us on Slack](https://konstructio.slack.com) to chat or ask questions
+  

@@ -1,0 +1,48 @@
+---
+hide_title: true
+sidebar_label: Overview
+sidebar_position: 1
+description: an overview of kubefirst on a Google Cloud kubernetes cluster
+image: "https://kubefirst.konstruct.io/docs/img/logo.svg"
+
+---
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import styles from "../stylesheets/tabs.module.css";
+import GitHubOverview from '../gcp/partials/github/_overview.mdx';
+import GitLabOverview from '../gcp/partials/gitlab/_overview.mdx';
+import CommonProvisionProcess from "../common/partials/common/_provision-process.mdx";
+import GCPLogo from '../img/gcp/logo.svg';
+
+<div class="cloud_logo">
+  <GCPLogo width="200px" alt="Google Cloud Logo" />
+</div>
+
+# Overview
+
+:::caution
+
+Google Cloud is in beta. Use at your own risks.
+
+:::
+
+The Google Cloud provisioning process will:
+<CommonProvisionProcess firstitem="Create a Kubernetes management cluster in Google Cloud."/>
+
+<Tabs groupId="git_provider" defaultValue="github" queryString>
+  <TabItem attributes={{ className: styles.github }} value="github" label={ <div className="git-tab"><img src="https://assets.kubefirst.com/console/github.svg" alt="GitHub logo" /><span>GitHub</span></div> }>
+
+    ![Installation Diagram](../img/gcp/github/installation-diagram-light.svg#light-mode)![Installation Diagram](../img/gcp/github/installation-diagram-dark.svg#dark-mode)
+
+    ## Applications
+    <GitHubOverview />
+
+  </TabItem>
+  <TabItem value="gitlab" attributes={{ className: styles.gitlab }} label={ <div className="git-tab"> <img src="https://assets.kubefirst.com/console/gitlab.svg" alt="GitLab logo" /> <span>GitLab</span></div> }>
+
+    ![Installation Diagram](../img/gcp/gitlab/installation-diagram-light.svg#light-mode)![Installation Diagram](../img/gcp/gitlab/installation-diagram-dark.svg#dark-mode)
+
+    ## Applications
+    <GitLabOverview />
+  </TabItem>
+</Tabs>

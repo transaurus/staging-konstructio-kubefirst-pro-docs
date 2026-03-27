@@ -1,0 +1,30 @@
+<svg
+  width="61"
+  height="60"
+  viewBox="0 0 61 60"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M21.6604 38.8384L21.6604 38.8385C26.5423 43.7205 34.4574 43.7206 39.3395 38.8384C44.2211 33.9568 44.2216 26.0429 39.3412 21.1609L21.6604 38.8384ZM21.6604 38.8384C16.7782 33.9563 16.7783 26.0412 21.6603 21.1593L21.6604 21.1592C26.5378 16.2817 34.4561 16.2788 39.3396 21.1593L21.6604 38.8384Z"
+    stroke="url(#paint0_linear_2072_308)"
+    stroke-opacity="0.2"
+    stroke-width="35"
+  />
+  <circle
+    cx="30.4988"
+    cy="30"
+    r="20"
+    fill="white"
+    stroke="url(#paint1_linear_2072_308)"
+    stroke-opacity="0.2"
+  />
+  <circle cx="30.4988" cy="30" r="14.5" fill="white" stroke="#1A1D2D" />
+  <path
+    d="M26.4986 31.1071L30.6306 35.2392L34.7627 31.1071M30.6306 24V34.9087"
+    stroke="#1A1D2D"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

@@ -1,0 +1,147 @@
+---
+title: Welcome to Kubefirst Docs
+description: Explore documentation for Kubefirst including installation, capabilities, and features
+keywords:
+  [
+    kubernetes,
+    kubefirst,
+    kubefirst pro,
+    konstruct,
+    cloud native,
+    installation,
+    features,
+  ]
+sidebar_position: 1
+hide_title: true
+---
+
+import { Card } from "@site/src/components/Card";
+import SignIcon from "@site/docs/img/general/signs.svg";
+import InstallationIcon from "@site/docs/img/general/installation.svg";
+import DocumentIcon from "@site/docs/img/general/document.svg";
+import HornIcon from "@site/docs/img/general/horn.svg";
+import FeedbackIcon from "@site/docs/img/general/feedback.svg";
+import PencilCanvaIcon from "@site/docs/img/general/pencil-canva.svg";
+
+<h1 className="text-4xl text-charcoal-blue mt-4 xl:ml-6 text-center xl:text-left font-medium">
+  Welcome to the Kubefirst Documentation
+</h1>
+
+<Card className="bg-gradient-to-b from-steel-blue/15 to-burnt-coral/15 flex flex-col items-center gap-3 xl:flex-row py-2">
+  <div className="flex flex-col items-start gap-8 xl:w-7/12 xl:max-w-max">
+    <h3 className="text-slate-800 text-xl font-medium mb-0">What is Kubefirst?</h3>
+    <p className="text-slate-800 tracking-[0.5px] mb-0 leading-6 [&>p]:mb-0">
+      Kubefirst is a cloud native platform for application delivery with
+      automated infrastructure workflows. It has fine-grained user access with
+      Vault secrets management, and support for GitHub or GitLab integrations
+      and Argo. Kubefirst Pro gives you an incredible UI to manage your
+      clusters, platform and applications.
+    </p>
+  </div>
+
+  <div className="xl:max-w-max [&>p]:flex [&>p]:justify-end [&>p>img]:translate-y-10">
+    ![Kubefirst Pro](../../docs/img/general/flying-bulb.png)
+  </div>
+</Card>
+
+<div className="flex flex-col lg:flex-row mt-10 gap-5 flex-wrap">
+  <Card className="border border-slate-200 shadow-xs flex-1 min-w-[318px] flex flex-col gap-6 items-center justify-start p-8 text-slate-700">
+    <div className="overflow-hidden rounded-full bg-gradient-to-b from-steel-blue/15 to-burnt-coral/15 w-16 h-16">
+      <SignIcon className="w-16 h-16" />
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <h6 className="font-medium text-[1rem] [&>a]:text-slate-700 [&>a]:hover:text-[var(--ifm-link-hover-color);] mb-0">Check out the [Getting Started section](/docs/overview) for</h6>
+
+      <ul className="list-disc list-outside -ml-3 mb-0 [&>li]:mb-0 [&>li]:leading-6">
+        <li>An overview of Kubefirst and Kubefirst Pro capabilities</li>
+        <li>A high-level FAQ</li>
+        <li>Details on Getting Support</li>
+      </ul>
+    </div>
+
+  </Card>
+
+  <Card className="border border-slate-200 shadow-xs flex-1 min-w-[318px] flex flex-col gap-6 items-center justify-start p-8 text-slate-700">
+    <div className="overflow-hidden rounded-full bg-gradient-to-b from-steel-blue/15 to-burnt-coral/15 w-16 h-16">
+      <InstallationIcon className="w-16 h-16" />
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <h6 className="font-medium text-[1rem] mb-0">Supported installs</h6>
+
+      <p className="mb-0 [&>p]:mb-0 [&>p]:leading-6">
+        Kubefirst offers local installation with k3d and support for install with multiple clouds including AWS, Azure, Google, Civo, DigitalOcean and more.
+      </p>
+
+      <p className="mb-0 leading-6">Check out the Install section for detailed instructions in your cloud.</p>
+    </div>
+
+  </Card>
+
+  <Card className="border border-slate-200 shadow-xs flex-1 min-w-[318px] flex flex-col gap-6 items-center justify-start p-8 text-slate-700">
+    <div className="overflow-hidden rounded-full bg-gradient-to-b from-steel-blue/15 to-burnt-coral/15 w-16 h-16">
+      <DocumentIcon className="w-16 h-16" />
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <h6 className="font-medium text-[1rem] mb-0">Features</h6>
+
+      <p className="mb-0 [&>p]:mb-0 [&>p]:leading-6">
+        Kubefirst functionality including your default repositories, our GitOps catalog, the Metaphor sample application, and adding your clusters.
+      </p>
+    </div>
+
+  </Card>
+  <Card className="border border-slate-200 shadow-xs flex-1 min-w-[318px] flex flex-col gap-6 items-center justify-start p-8 text-slate-700">
+    <div className="overflow-hidden rounded-full bg-gradient-to-b from-steel-blue/15 to-burnt-coral/15 w-16 h-16">
+      <HornIcon className="w-16 h-16" />
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <h6 className="font-medium text-[1rem] mb-0">What's new?</h6>
+
+      <p className="mb-0 [&>p]:mb-0 [&>p]:leading-6">
+        Welcome to the new documentation site! This docs site is new and we're working to expand our content!
+      </p>
+      <p className="mb-0 [&>p]:mb-0 [&>p]:leading-6">
+        Check back here for details on new releases, content revisions, and updates to our documentation.
+      </p>
+    </div>
+
+  </Card>
+  <Card className="border border-slate-200 shadow-xs flex-1 min-w-[318px] flex flex-col gap-6 items-center justify-start p-8 text-slate-700">
+    <div className="overflow-hidden rounded-full bg-gradient-to-b from-steel-blue/15 to-burnt-coral/15 w-16 h-16">
+      <FeedbackIcon className="w-16 h-16" />
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <h6 className="font-medium text-[1rem] mb-0">We'd love to hear your feedback!</h6>
+
+      <p className="mb-0 [&>p]:mb-0 [&>p]:leading-6">
+        Fancy an Amazon voucher for a few minutes of your time?
+      </p>
+      <p className="mb-0 [&>p]:mb-0 [&>p]:leading-6">
+        If you have tried any of our products, we've a few quick questions to ask you about your experience.
+      </p>
+      <a className="[&>p]:text-left [&>p]:underline [&>p]:cursor-pointer text-slate-700 hover:text-[var(--ifm-link-hover-color);]" target="_blank" href="https://k1.social/book-feedback">
+        Book a call with our feedback team
+      </a>
+    </div>
+
+  </Card>
+  <Card className="border border-slate-200 shadow-xs flex-1 min-w-[318px] flex flex-col gap-6 items-center justify-start p-8 text-slate-700">
+    <div className="overflow-hidden rounded-full bg-gradient-to-b from-steel-blue/15 to-burnt-coral/15 w-16 h-16">
+      <PencilCanvaIcon className="w-16 h-16" />
+    </div>
+
+    <div className="flex flex-col gap-3">
+      <h6 className="font-medium text-[1rem] mb-0">Contribute to Kubefirst and Docs</h6>
+
+      <p className="mb-0 [&>p]:mb-0 [&>p]:leading-6">
+        Lean on the expertise of hundreds of engineers in our community. For customization, upgrade to dedicated Enterprise support.
+      </p>
+    </div>
+
+  </Card>
+</div>

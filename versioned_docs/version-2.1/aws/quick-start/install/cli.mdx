@@ -1,0 +1,57 @@
+---
+hide_title: true
+sidebar_label: CLI
+sidebar_position: 2
+image: "https://kubefirst.konstruct.io/docs/img/logo.svg"
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import GitHubClusterCreateCmd from "../../partials/github/_cluster-create.mdx";
+import GitLabClusterCreateCmd from "../../partials/gitlab/_cluster-create.mdx";
+import CommonCloudPrerequisites from "../../partials/common/_prerequisites.mdx";
+import CommonClusterConnectivity from "../../partials/common/_cluster-connectivity.mdx";
+import CommonGitHubPrerequisites from "../../../common/partials/github/_prerequisites.mdx";
+import CommonGitLabPrerequisites from "../../../common/partials/gitlab/_prerequisites.mdx";
+import AWSRootCredentialsCmd from "../../partials/common/_root-credentials-cmd.mdx";
+import CommonTerminalOutput from "../../../common/partials/common/_terminal-output.mdx";
+import * as config from "../../../constants.js";
+import styles from "../../../stylesheets/tabs.module.css";
+
+export const TabLabel = ({ imgSrc, label, alt }) => (
+  <div className="git-tab">
+    <img src={imgSrc} alt={alt} />
+    <span>{label}</span>
+  </div>
+);
+
+<Tabs groupId="git_provider" defaultValue="github" queryString>
+    <TabItem attributes={{ className: styles.github }} value="github" label={ <div className="git-tab"><img src="https://assets.kubefirst.com/console/github.svg" alt="GitHub logo" /><span>GitHub</span></div> }>
+  <CommonGitHubPrerequisites />
+
+  <CommonCloudPrerequisites />
+
+  <GitHubClusterCreateCmd />
+
+  <CommonTerminalOutput />
+  
+  <AWSRootCredentialsCmd />
+
+  <CommonClusterConnectivity />
+
+  </TabItem>
+  <TabItem attributes={{ className: styles.gitlab }} value="gitlab" label={ <div className="git-tab"><img src="https://assets.kubefirst.com/console/gitlab.svg" alt="GitLab logo" /><span>GitLab</span></div> }>
+  <CommonGitLabPrerequisites />
+
+  <CommonCloudPrerequisites />
+
+  <GitLabClusterCreateCmd />
+
+  <CommonTerminalOutput />
+
+  <AWSRootCredentialsCmd />
+
+  <CommonClusterConnectivity />
+
+  </TabItem>
+</Tabs>
