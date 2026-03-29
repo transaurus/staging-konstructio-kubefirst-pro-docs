@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "2.0",
+    "description": "The label for version 2.0"
+  },
+  "sidebar.docs.category.Local with GitHub": {
+    "message": "Local with GitHub",
+    "description": "The label for category Local with GitHub in sidebar docs"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar docs"
+  },
+  "sidebar.docs.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar docs"
+  },
+  "sidebar.docs.category.Local with GitLab": {
+    "message": "Local with GitLab",
+    "description": "The label for category Local with GitLab in sidebar docs"
+  },
+  "sidebar.docs.category.Civo with GitHub": {
+    "message": "Civo with GitHub",
+    "description": "The label for category Civo with GitHub in sidebar docs"
+  },
+  "sidebar.docs.category.Civo with GitLab": {
+    "message": "Civo with GitLab",
+    "description": "The label for category Civo with GitLab in sidebar docs"
+  },
+  "sidebar.docs.category.AWS with GitHub": {
+    "message": "AWS with GitHub",
+    "description": "The label for category AWS with GitHub in sidebar docs"
+  },
+  "sidebar.docs.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar docs"
+  },
+  "sidebar.docs.category.AWS with GitLab": {
+    "message": "AWS with GitLab",
+    "description": "The label for category AWS with GitLab in sidebar docs"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "2.1",
+    "description": "The label for version 2.1"
+  },
+  "sidebar.aws.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar aws"
+  },
+  "sidebar.aws.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar aws"
+  },
+  "sidebar.aws.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar aws"
+  },
+  "sidebar.aws.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar aws"
+  },
+  "sidebar.civo.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar civo"
+  },
+  "sidebar.civo.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar civo"
+  },
+  "sidebar.civo.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar civo"
+  },
+  "sidebar.k3d.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar k3d"
+  },
+  "sidebar.k3d.category.Explore": {
+    "message": "Explore",
+    "description": "The label for category Explore in sidebar k3d"
+  }
+}
